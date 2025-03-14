@@ -65,34 +65,25 @@ gcc -o client client.c
 
 #### General Commands
 
-**login <user> <password>**
-Connects as an admin.
+```**login <user> <password>**``` Connects as an admin.
 
-**logout**
-Logs out the admin.
+```logout``` Logs out the admin.
 
-**plecari <city_name>**
-Displays departures from `<city_name>` in the next hour.
+```plecari <city_name>``` Displays departures from `<city_name>` in the next hour.
 
-**sosiri <city_name>**
-Displays arrivals in `<city_name>` in the next hour.
+```sosiri <city_name``` Displays arrivals in `<city_name>` in the next hour.
 
-**trenuri <city_name> [DD.MM.YYYY]**
-Displays train schedules from `<city_name>` on the given date (optional).
+```trenuri <city_name> [DD.MM.YYYY]``` Displays train schedules from `<city_name>` on the given date (optional).
 
-**info <train_id>**
-Provides information about the specified train.
+```info <train_id>``` Provides information about the specified train.
 
-**quit**
-Disconnects the client.
+```quit``` Disconnects the client.
 
 #### Admin Commands (Require Login)
 
-**intarziere <train_id> <station> <minutes>**
-Adds a delay in minutes to the specified train.
+```intarziere <train_id> <station> <minutes>``` Adds a delay in minutes to the specified train.
 
-**reset**
-Resets all train delays.
+```reset``` Resets all train delays.
 
 ## Notes
 
