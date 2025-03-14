@@ -97,7 +97,6 @@ int exceptionCount = 0;
 int nrTotalStatii = 0;
 int vizitat[1500];
 const char *trainsFile = "Trains/Trenuri.xml";
-const char *exceptiiFile = "Trains/Exceptii.xml";
 
 void get_current_date(char *buffer, size_t size) 
 {
