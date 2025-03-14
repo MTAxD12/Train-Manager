@@ -55,32 +55,32 @@ gcc -o client client.c
 ### Running the Client
 
 ```sh
-./client 127.0.0.1 2048
+./client 127.0.0.1 2024
 ```
 
 - `127.0.0.1`: The IP address (localhost in this case).
-- `2048`: The port number used by the server.
+- `2024`: The port number used by the server.
 
 ### Available Commands
 
 #### General Commands
 
-**login <user> <password>**  
+**login <user> <password>**
 Connects as an admin.
 
-**logout**  
+**logout**
 Logs out the admin.
 
-**plecari <city_name>**  
+**plecari <city_name>**
 Displays departures from `<city_name>` in the next hour.
 
-**sosiri <city_name>**  
+**sosiri <city_name>**
 Displays arrivals in `<city_name>` in the next hour.
 
-**trenuri <city_name> [DD.MM.YYYY]**  
+**trenuri <city_name> [DD.MM.YYYY]**
 Displays train schedules from `<city_name>` on the given date (optional).
 
-**info <train_id>**  
+**info <train_id>**
 Provides information about the specified train.
 
 **quit**
@@ -88,16 +88,16 @@ Disconnects the client.
 
 #### Admin Commands (Require Login)
 
-**intarziere <train_id> <station> <minutes>**  
+**intarziere <train_id> <station> <minutes>**
 Adds a delay in minutes to the specified train.
 
-**reset**  
+**reset**
 Resets all train delays.
 
 ## Notes
 
 - The `users.txt` file stores user credentials in the format `user:pass`. Users must log in using these credentials.
-- The commands `intarziere` and `reset` can only be used when logged in.
+- The commands `intarziere` and `reset` can only be used when logged in as an admin.
 - The parser does not automatically remove diacritics. This must be done manually using an external tool. The necessary modifications have already been made, so the program can be run and tested without additional adjustments.
 - The program is designed to work exclusively on UNIX-based systems due to its reliance on UNIX APIs.
 
