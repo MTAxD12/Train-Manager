@@ -1,0 +1,5 @@
+andrei:parola
+daniel:parola
+test:test
+admin:admin
+admin2:1234a
