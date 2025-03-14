@@ -1,4 +1,4 @@
-# XML Parser for CFR Website
+# Train Manager
 
 This repository contains a parser that processes XML files obtained from the CFR website. The parser generates a simplified XML file for easier use by the main program.
 
@@ -63,13 +63,13 @@ gcc -o client client.c
 
 ### Available Commands
 
-#### Client Commands
+#### General Commands
 
 **login <user> <password>**  
-Connects the client.
+Connects as an admin.
 
 **logout**  
-Logs out the client.
+Logs out the admin.
 
 **plecari <city_name>**  
 Displays departures from `<city_name>` in the next hour.
@@ -83,6 +83,9 @@ Displays train schedules from `<city_name>` on the given date (optional).
 **info <train_id>**  
 Provides information about the specified train.
 
+**quit**
+Disconnects the client.
+
 #### Admin Commands (Require Login)
 
 **intarziere <train_id> <station> <minutes>**  
@@ -90,11 +93,6 @@ Adds a delay in minutes to the specified train.
 
 **reset**  
 Resets all train delays.
-
-#### General Commands
-
-**quit**  
-Disconnects the client.
 
 ## Notes
 
